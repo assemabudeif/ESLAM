@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="goto_text">اذهب إلى</string>
+    <string name="name_text">الاسم :</string>
+    <string name="phone_text">رقم الموبايل :</string>
+    <string name="whatsapp_text">الواتساب :</string>
+    <string name="email_text">البريد الالكتروني :</string>
+    <string name="facebook_text">فيسبوك :</string>
+    <string name="twitter_text">تويتر :</string>
+    <string name="my_name_text">عاصم أشرف عادل أبوضيف</string>
+    <string name="pege_num_text">الصفحة :</string>
+    <string name="section_text">"الجزء : "</string>
+    <string name="quran_text">القرآن</string>
+    <string name="azkae_text">الاذكار</string>
+    <string name="sebha">السبحة</string>
+    <string name="about_programming">عن المطور</string>
+</resources>

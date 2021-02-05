@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#340055FF"
+    android:padding="10dp"
+    tools:context=".AzkarWakingUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya"
+            android:text="الحَمْـدُ لِلّهِ الّذي أَحْـيانا بَعْـدَ ما أَماتَـنا وَإليه النُّـشور."
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAzkarWakingUp1"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="8dp" />
+
+        <TextView
+            android:id="@+id/_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya"
+            android:text="الحمدُ للهِ الذي عافاني في جَسَدي وَرَدّ عَليّ روحي وَأَذِنَ لي بِذِكْرِه. "
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAzkarWakingUp2"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="8dp"
+        android:textDirection="rtl" />
+
+        <TextView
+            android:id="@+id/_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya"
+            android:text="لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شَـريكَ له، لهُ المُلـكُ ولهُ الحَمـد، وهوَ على كلّ شيءٍ قدير، سُـبْحانَ اللهِ، والحمْـدُ لله ، ولا إلهَ إلاّ اللهُ واللهُ أكبَر، وَلا حَولَ وَلا قوّة إلاّ باللّهِ العليّ العظيم. رَبِّ اغْفرْ لي. "
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAzkarWakingUp3"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="8dp"
+        android:textDirection="rtl" />
+    </LinearLayout>
+        
+</ScrollView>

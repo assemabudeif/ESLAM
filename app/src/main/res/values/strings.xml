@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ESLAM</string>
+    <string name="goto_text">Go To</string>
+    <string name="name_text">Name :</string>
+    <string name="phone_text">Phone Number :</string>
+    <string name="whatsapp_text">WhatsApp :</string>
+    <string name="email_text">Email :</string>
+    <string name="facebook_text">Facebook Link :</string>
+    <string name="twitter_text">Twitter Link :</string>
+    <string name="my_name_text">Assem Ashraf Adel Abu Daif</string>
+    <string name="pege_num_text">"Page : "</string>
+    <string name="section_text">"Section : "</string>
+    <string name="quran_text">Quran</string>
+    <string name="azkae_text">Azkar</string>
+    <string name="sebha">Seb7a</string>
+    <string name="about_programming">About Programming</string>
+</resources>
