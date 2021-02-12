@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -45,13 +46,18 @@ public class AzkarMorning extends AppCompatActivity {
     Button btnAzkarMorning29;
     Button btnAzkarMorning30;
     Button btnAzkarMorning31;
+    LinearLayout layout;
     Vibrator vibrator;
+    public static int count = 0;
 
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_azkar_morning);
         setTitle("اذكار الصباح");
+        layout = findViewById(R.id.layoutMorning);
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
         btnAzkarMorning1 = findViewById(R.id.btnAzkarMorning1);
         btnAzkarMorning2 = findViewById(R.id.btnAzkarMorning2);
@@ -132,11 +138,8 @@ public class AzkarMorning extends AppCompatActivity {
                     btnZekr.setText("" + --counter);
                 } else {
                     vibrator.vibrate(150);
-                    txtZekr.setTextSize(0);
-                    txtZekr.setText("");
-                    btnZekr.setText("");
-                    btnZekr.setVisibility(View.INVISIBLE);
-                    txtZekr.setVisibility(View.INVISIBLE);
+                    layout.removeView(btnZekr);
+                    layout.removeView(txtZekr);
                 }
             }
         });

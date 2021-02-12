@@ -19,6 +19,7 @@
         android:fontFamily="@font/gabriela"
         android:padding="5dp"
         android:text="TextView"
+        android:textColor="@color/black"
         android:textDirection="rtl"
         android:textIsSelectable="false"
         android:textSize="24sp"

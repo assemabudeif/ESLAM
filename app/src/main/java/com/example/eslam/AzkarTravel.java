@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class AzkarTravel extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class AzkarTravel extends AppCompatActivity {
     Button btnAzkarTravel4;
     Button btnAzkarTravel5;
     Vibrator vibrator;
+    LinearLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class AzkarTravel extends AppCompatActivity {
 
         setContentView(R.layout.activity_azkar_travel);
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        layout = findViewById(R.id.layoutTravel);
         btnAzkarTravel1 = findViewById(R.id.btnAzkarTravel1);
         btnAzkarTravel2 = findViewById(R.id.btnAzkarTravel2);
         btnAzkarTravel3 = findViewById(R.id.btnAzkarTravel3);
@@ -49,11 +52,8 @@ public class AzkarTravel extends AppCompatActivity {
                     btnZekr.setText("" + --counter);
                 } else {
                     vibrator.vibrate(150);
-                    txtZekr.setTextSize(0);
-                    txtZekr.setText("");
-                    btnZekr.setText("");
-                    btnZekr.setVisibility(View.INVISIBLE);
-                    txtZekr.setVisibility(View.INVISIBLE);
+                    layout.removeView(btnZekr);
+                    layout.removeView(txtZekr);
                 }
             }
         });

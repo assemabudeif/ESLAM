@@ -36,6 +36,7 @@
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:text="@string/pege_num_text"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -47,6 +48,7 @@
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -58,6 +60,7 @@
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:text="@string/section_text"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -68,6 +71,7 @@
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -96,7 +100,8 @@
             android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

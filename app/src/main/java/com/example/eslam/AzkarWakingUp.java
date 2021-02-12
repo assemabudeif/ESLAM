@@ -7,15 +7,24 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.Vector;
+
 public class AzkarWakingUp extends AppCompatActivity {
+
 
     Button btnAzkarWakingUp1;
     Button btnAzkarWakingUp2;
     Button btnAzkarWakingUp3;
     Vibrator vibrator;
+    LinearLayout layout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +32,10 @@ public class AzkarWakingUp extends AppCompatActivity {
         setTitle("اذكار الاستيقاظ");
 
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        layout = findViewById(R.id.layoutAzkerWakingUp);
         btnAzkarWakingUp1 = findViewById(R.id.btnAzkarWakingUp1);
         btnAzkarWakingUp2 = findViewById(R.id.btnAzkarWakingUp2);
         btnAzkarWakingUp3 = findViewById(R.id.btnAzkarWakingUp3);
-
         addAzkar(btnAzkarWakingUp1, 1,  findViewById(R.id._1));
         addAzkar(btnAzkarWakingUp2, 1, findViewById(R.id._2));
         addAzkar(btnAzkarWakingUp3, 1, findViewById(R.id._3));
@@ -44,11 +53,8 @@ public class AzkarWakingUp extends AppCompatActivity {
                     btnZekr.setText("" + --counter);
                 } else {
                     vibrator.vibrate(150);
-                    txtZekr.setTextSize(0);
-                    txtZekr.setText("");
-                    btnZekr.setText("");
-                    btnZekr.setVisibility(View.INVISIBLE);
-                    txtZekr.setVisibility(View.INVISIBLE);
+                    layout.removeView(btnZekr);
+                    layout.removeView(txtZekr);
                 }
             }
         });

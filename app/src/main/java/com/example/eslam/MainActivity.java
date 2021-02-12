@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mainItems = new Vector<>();
         mainItems.add(new MainItems(getString(R.string.quran_text), R.mipmap.mos7f));
         mainItems.add(new MainItems(getString(R.string.azkae_text), R.mipmap.azhkar_muslim));

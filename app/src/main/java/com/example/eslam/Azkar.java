@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
@@ -32,6 +33,7 @@ public class Azkar extends AppCompatActivity {
                 TextView items = (TextView) super.getView(position, convertView, parent);
                 items.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 22);
                 items.setPadding(50, 50, 50, 50);
+                items.setTextColor(Color.BLACK);
                 return items;
             }
         };

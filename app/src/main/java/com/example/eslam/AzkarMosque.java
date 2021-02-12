@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class AzkarMosque extends AppCompatActivity {
@@ -16,12 +17,14 @@ public class AzkarMosque extends AppCompatActivity {
     Button btnAzkarMosque2;
     Button btnAzkarMosque3;
     Vibrator vibrator;
+    LinearLayout layout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_azkar_mosque);
         setTitle("اذكار المسجد");
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        layout = findViewById(R.id.layoutMosque);
         btnAzkarMosque1 = findViewById(R.id.btnAzkarMosque1);
         btnAzkarMosque2 = findViewById(R.id.btnAzkarMosque2);
         btnAzkarMosque3 = findViewById(R.id.btnAzkarMosque3);
@@ -43,11 +46,8 @@ public class AzkarMosque extends AppCompatActivity {
                     btnZekr.setText("" + --counter);
                 } else {
                     vibrator.vibrate(150);
-                    txtZekr.setTextSize(0);
-                    txtZekr.setText("");
-                    btnZekr.setText("");
-                    btnZekr.setVisibility(View.INVISIBLE);
-                    txtZekr.setVisibility(View.INVISIBLE);
+                    layout.removeView(btnZekr);
+                    layout.removeView(txtZekr);
                 }
             }
         });

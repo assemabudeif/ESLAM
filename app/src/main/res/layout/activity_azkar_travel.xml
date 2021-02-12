@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#340055FF"
+    android:background="#ECEFF1"
     android:padding="10dp"
     tools:context=".AzkarTravel">
 
     <LinearLayout
+        android:id="@+id/layoutTravel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -19,15 +20,16 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alegreya"
             android:text="دعاء السفر\n الله أكبر، الله أكبر، الله أكبر، (سُبْحانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ * وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ) اللهم إنا نسألُكَ في سفرنا هذا البرَّ والتقوى، ومن العمل ما ترضى، اللهم هون علينا سفرنا هذا واطو عنا بعده، اللهم أنت الصاحب في السفر، والخليفة في الأهل، اللهم إني أعوذ بك من وعْثاءِ السفر، وكآبة المنظر، وسوء المنقلب في المال والأهل، وإذا رجع قالهن وزاد فيهن آيبون، تائبون، عابدون، لربنا حامدون. "
+            android:textColor="@color/black"
             android:textDirection="rtl"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnAzkarTravel1"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/btnAzkarTravel1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="8dp" />
 
         <TextView
             android:id="@+id/_2"
@@ -35,16 +37,17 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alegreya"
             android:text="دعاء المقيم للمسافر\n أستودع الله دينك وأمانتك، وخواتيم عملك. \nزوَّدك الله التقوى، وغفر ذْنبك ويسَّر لك الخير حيث ما كنت."
+            android:textColor="@color/black"
             android:textDirection="rtl"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnAzkarTravel2"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_margin="8dp"
-        android:textDirection="rtl" />
+        <Button
+            android:id="@+id/btnAzkarTravel2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:textDirection="rtl" />
 
         <TextView
             android:id="@+id/_3"
@@ -52,16 +55,17 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alegreya"
             android:text='دعاء المسافر للمقيم: \n"أستودعُكَ الله الذي لا تضيع ودائعه".'
+            android:textColor="@color/black"
             android:textDirection="rtl"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnAzkarTravel3"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_margin="8dp"
-        android:textDirection="rtl" />
+        <Button
+            android:id="@+id/btnAzkarTravel3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:textDirection="rtl" />
 
         <TextView
             android:id="@+id/_4"
@@ -69,16 +73,17 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alegreya"
             android:text='ذكر الرجوع من السفر: \n"يكبّر على كلّ شرف ثلاث تكبيرات ثمّ يقول: لا إله إلا الله وحده لا شريك لهُ، لهُ الملك، ولهُ الحمدُ وهو على كلّ شيءٍ قدير، آيبون، تائبون، عابدون، لربنا حامدون، صدق الله وعده، ونصر عبده، وهزم الأحزاب وحده".'
+            android:textColor="@color/black"
             android:textDirection="rtl"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnAzkarTravel4"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_margin="8dp"
-        android:textDirection="rtl" />
+        <Button
+            android:id="@+id/btnAzkarTravel4"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:textDirection="rtl" />
 
         <TextView
             android:id="@+id/_5"
@@ -86,17 +91,18 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alegreya"
             android:text='دعاء الركوب: \n"بسم الله الحمد لله.. (سُبْحانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ) الحمد لله، الحمد لله، الحمد لله، الله أكبر، الله أكبر، الله أكبر، سبحانك اللهم إني ظلمت نفسي فاغفر لي، إنّه لا يغفر الذنوب إلا أنت".'
+            android:textColor="@color/black"
             android:textDirection="rtl"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnAzkarTravel5"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_margin="8dp"
-        android:textDirection="rtl" />
-    
+        <Button
+            android:id="@+id/btnAzkarTravel5"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:textDirection="rtl" />
+
     </LinearLayout>
 
 </ScrollView>

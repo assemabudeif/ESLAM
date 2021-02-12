@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class AzkarSleep extends AppCompatActivity {
@@ -27,6 +28,7 @@ public class AzkarSleep extends AppCompatActivity {
     Button btnAzkarSleep14;
     Button btnAzkarSleep15;
     Vibrator vibrator;
+    LinearLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class AzkarSleep extends AppCompatActivity {
         setContentView(R.layout.activity_azkar_sleep);
         setTitle("اذكار النوم");
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+        layout = findViewById(R.id.layoutSleep);
         btnAzkarSleep1 = findViewById(R.id.btnAzkarSleep1);
         btnAzkarSleep2 = findViewById(R.id.btnAzkarSleep2);
         btnAzkarSleep3 = findViewById(R.id.btnAzkarSleep3);
@@ -80,11 +83,8 @@ public class AzkarSleep extends AppCompatActivity {
                     btnZekr.setText("" + --counter);
                 } else {
                     vibrator.vibrate(150);
-                    txtZekr.setTextSize(0);
-                    txtZekr.setText("");
-                    btnZekr.setText("");
-                    btnZekr.setVisibility(View.INVISIBLE);
-                    txtZekr.setVisibility(View.INVISIBLE);
+                    layout.removeView(btnZekr);
+                    layout.removeView(txtZekr);
                 }
             }
         });

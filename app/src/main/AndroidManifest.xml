@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.eslam">
+
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,34 +13,46 @@
         android:roundIcon="@mipmap/eslam_ic_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ESLAM">
-        <activity android:name=".AboutProgrammer"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".AzkarTravel"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AzkarMosque"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AzkarPrayer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AzkarWakingUp"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AzkarSleep"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AzkarNight"
+        <activity
+            android:name=".AboutProgrammer"
             android:screenOrientation="portrait" />
-        <activity android:name=".AzkarMorning"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AllQuran"
+
+        <activity
+            android:name=".AzkarTravel"
             android:screenOrientation="portrait" />
-        <activity android:name=".Qebla"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Sebha"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Azkar"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Quran"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AzkarMosque"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AzkarPrayer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AzkarWakingUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AzkarSleep"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AzkarNight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AzkarMorning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllQuran"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sebha"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Azkar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Quran"
+            android:screenOrientation="portrait" />
         <activity android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ESLAM">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

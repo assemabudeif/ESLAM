@@ -30,26 +30,26 @@
 
     <Button
         android:id="@+id/btnReset"
-        android:layout_width="97dp"
-        android:layout_height="99dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_above="@+id/btnClick"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="-2dp"
         android:background="@mipmap/circyle"
         android:longClickable="false"
         android:shadowColor="#A63F51B5"
         android:textDirection="rtl"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:backgroundTint="@color/material_on_surface_emphasis_high_type"
+        app:backgroundTint="@color/material_on_primary_emphasis_medium"
         app:rippleColor="@color/white"
         app:strokeColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnClick"
-        android:layout_width="288dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="50dp"
@@ -61,6 +61,6 @@
         android:textDirection="rtl"
         android:textSize="30sp"
         android:textStyle="normal|bold"
-        app:backgroundTint="@color/material_on_surface_emphasis_high_type" />
+        app:backgroundTint="@color/material_on_primary_emphasis_medium" />
 
 </RelativeLayout>
